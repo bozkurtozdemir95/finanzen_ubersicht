@@ -228,6 +228,30 @@ p {
       transition-delay: .1s;
       transform: translateX(10px);
     }
+
+    &.lila {
+      color: $lila;
+
+      svg {
+        fill: $lila;
+      }
+    }
+
+    &.rosa {
+      color: $rosa;
+
+      svg {
+        fill: $rosa;
+      }
+    }
+
+    &.green {
+      color: $green;
+
+      svg {
+        fill: $green;
+      }
+    }
   }
 
   .icon {
@@ -244,6 +268,7 @@ p {
     svg {
       width: 16px;
       max-height: 19px;
+      transition: all .25s;
     }
   }
 
@@ -340,6 +365,18 @@ p {
 .tab-content {
   flex-direction: column;
   align-items: flex-start;
+  animation: flash .5s forwards;
+}
+
+@keyframes flash {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ---------- Finance Page ---------- */
@@ -353,7 +390,10 @@ p {
 .article-box {
   position: relative;
   height: 100%;
-  border-radius: 4px;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  cursor: pointer;
 
   .text {
     position: absolute;
@@ -363,13 +403,32 @@ p {
   }
 
   .link {
-    &:hover {
+    .icon {
+      width: 32px;
+      height: 32px;
 
+      svg {
+        width: 14px;
+      }
+    }
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.2);
+      filter: blur(1px);
+    }
+
+    .link {
       .icon {
         background: $blue;
         transform: none;
       }
     }
+  }
+
+  img {
+    transition: all .25s;
   }
 }
 
