@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+
+    <title>Finanzen Ubersicht</title>
+</head>
+
+<body>
+<div class="container">
+    <div class="team">
+        <div class="row mb-md">
+            <div class="flex flex-column col-7 px-md px-0-mob text">
+                <h1 class="title blue">Von Anderen lernen</h1>
+                <p class="large">Vorstellungen der Berufswahl sind nicht vorhanden
+                    Die Beschäftigung mit dem Zusammenhang zwischen Berufswahl und Lebensgestaltung ist nicht
+                    abgeschlossen.
+                    Trotz schwierigen Umständen haben es diese Jugendlichen geschafft.</p>
+            </div>
+        </div>
+        <div class="row mb-lg">
+            <div class="flex flex-column col-6 px-0-mob">
+                <img src=<%=require("./images/team-1.png")%>
+                alt="team1">
+            </div>
+            <div class="flex flex-column justify-center col-6 px-lg px-0-mob text">
+                <h2 class="title lila">Nach dem 9. Schuljahr hat`s geklappt</h2>
+                <p class="small">Wenn am Ende der obligatorischen Schulzeit
+                    der Übertritt in eine Berufsbildung (noch) nicht möglich ist, gibt
+                    es im Rahmen der Sonderschulung oder eines Brückenangebotes
+                    verschiedene Möglichkeiten für die vertiefte Berufswahlvorbereitung.</p>
+
+                <a href="#" class="link">
+                    <div class="icon">
+                        <svg>
+                            <use href="#arrow-right"/>
+                        </svg>
+                    </div>
+                    <span>Mehr erfahren</span>
+                </a>
+            </div>
+        </div>
+        <div class="row flex-row-reverse mb-md justify-center">
+            <div class="flex flex-column col-5">
+                <img src=<%=require("./images/team-2.png")%>
+                alt="team2">
+            </div>
+            <div class="flex flex-column justify-center col-4  text">
+                <h2 class="title rosa">Ich habe nur ein wenig Hilfe gebraucht</h2>
+                <p class="small">Sie beobachten an Ihrer Mitarbeiterin, Ihrem Mitarbeiter
+                    schon länger Auffälligkeiten. Oder das Verhalten erscheint
+                    Ihnen in letzter Zeit verändert.</p>
+
+                <a href="#" class="link">
+                    <div class="icon">
+                        <svg>
+                            <use href="#arrow-right"/>
+                        </svg>
+                    </div>
+                    <span>Mehr erfahren</span>
+                </a>
+            </div>
+        </div>
+        <div class="row mb-lg justify-center">
+            <div class="flex flex-column col-3">
+                <img src=<%=require("./images/team-3.png")%>
+                alt="team3">
+            </div>
+            <div class="flex flex-column justify-center col-4 text">
+                <h2 class="title green">Viele waren bereit, mir zu helfen</h2>
+                <p class="small">Trotz Beeinträchtigungen hat Orell erfolgreich eine Lehre absolviert. Kompetenzen
+                    Verhaltensweisen, welche den direkten Einstieg in die Arbeitswelt erleich-tern/ermöglichen sind
+                    zureichend vorhanden.
+                </p>
+
+                <a href="#" class="link">
+                    <div class="icon">
+                        <svg>
+                            <use href="#arrow-right"/>
+                        </svg>
+                    </div>
+                    <span>Mehr erfahren</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-darkblue py-lg mb-lg help">
+    <div class="container px-md">
+        <div class="row mb-xs">
+            <div class="col-6">
+                <h1 class="title white-text white">Häufige Probleme und wie wir helfen</h1>
+            </div>
+        </div>
+
+        <div class="row justify-between">
+            <div class="col-5">
+                <ul class="tab-links">
+                    <li onclick="changeTab(1)">
+                        <div class="flex flex-column">
+                            <h5>Weiss nicht, was ich werden möchte</h5>
+                            <p class="small m-0">Ich bin planlos und tu mich schwer.</p>
+                        </div>
+                        <div class="link-button">
+                            <div class="icon">
+                                <svg>
+                                    <use href="#arrow-right"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <li onclick="changeTab(2)">
+                        <div class="flex flex-column">
+                            <h5>Ich bekomme nur absagen</h5>
+                            <p class="small m-0">Bewerbungen sind nicht erfolgreich</p>
+                        </div>
+                        <div class="link-button">
+                            <div class="icon">
+                                <svg>
+                                    <use href="#arrow-right"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <li onclick="changeTab(3)">
+                        <div class="flex flex-column">
+                            <h5>Ich weiss nicht wie ich vorgehen muss</h5>
+                            <p class="small m-0">Ich kann mich nicht selber bewerben.</p>
+                        </div>
+                        <div class="link-button">
+                            <div class="icon">
+                                <svg>
+                                    <use href="#arrow-right"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <li onclick="changeTab(4)">
+                        <div class="flex flex-column">
+                            <h5>Ich erfülle die Erwartungen nicht</h5>
+                            <p class="small m-0">Achten Sie auf die ersten anzeichen.</p>
+                        </div>
+                        <div class="link-button">
+                            <div class="icon">
+                                <svg>
+                                    <use href="#arrow-right"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 ml-auto">
+                <div class="tab-content">
+                    <h3 class="white-text">Suche das Gespräch mit deinem Vorgesetzten</h3>
+                    <p class="medium mb-xs white-text">Es ist nicht einfach, sich in einem Betrieb zurechtzufinden, in
+                        dem
+                        die
+                        unterschiedlichsten Leute zusammen arbeiten. Probleme entstehen häufig, wenn Menschen auf
+                        absolut
+                        anderen Wellenlängen sind. Du kommst mit der Art deines Berufsbildners oder deiner
+                        Berufsbildnerin
+                        überhaupt nicht klar?</p>
+                    <h3 class="white-text">Suche das Gespräch mit deinem Vorgesetzten</h3>
+                    <ul class="mb-xs">
+                        <li>Die Jugendlichen entwickeln konkrete Berufsvorstellungen.</li>
+                        <li>Sie wählen eine Anschlusslösung, die je nach Herkunftsschultyp variiert.</li>
+                        <li>Für Jugendliche aus dem 9. und 10. Schuljahr ist dies vor allem die Entscheidung für eine
+                            Berufslehre, eine Mittelschule oder ein Zwischenjahr. […]
+                        </li>
+                        <li>Die Phase endet mit einer konkreten beruflichen Entscheidung.</li>
+                        <li>Die Phase endet mit einer konkreten beruflichen Entscheidung.</li>
+                    </ul>
+                    <button class="custom-button">Mehr erfahren</button>
+                </div>
+                <div class="tab-content">
+                    <h3 class="white-text">Ich bekomme nur absagen</h3>
+                    <p class="medium mb-xs white-text">Es ist nicht einfach, sich in einem Betrieb zurechtzufinden, in
+                        dem
+                        die
+                        unterschiedlichsten Leute zusammen arbeiten. Probleme entstehen häufig, wenn Menschen auf
+                        absolut
+                        anderen Wellenlängen sind. Du kommst mit der Art deines Berufsbildners oder deiner
+                        Berufsbildnerin
+                        überhaupt nicht klar?</p>
+                    <h3 class="white-text">Suche das Gespräch mit deinem Vorgesetzten</h3>
+                </div>
+                <div class="tab-content">
+                    <h3 class="white-text">Ich weiss nicht wie ich vorgehen muss</h3>
+                    <p class="medium mb-xs white-text">Es ist nicht einfach, sich in einem Betrieb zurechtzufinden, in
+                        dem
+                        die
+                        unterschiedlichsten Leute zusammen arbeiten. Probleme entstehen häufig, wenn Menschen auf
+                        absolut
+                        anderen Wellenlängen sind. Du kommst mit der Art deines Berufsbildners oder deiner
+                        Berufsbildnerin
+                        überhaupt nicht klar?</p>
+                    <h3 class="white-text">Suche das Gespräch mit deinem Vorgesetzten</h3>
+                </div>
+                <div class="tab-content">
+                    <h3 class="white-text">Ich erfülle die Erwartungen nicht</h3>
+                    <p class="medium mb-xs white-text">Es ist nicht einfach, sich in einem Betrieb zurechtzufinden, in
+                        dem
+                        die
+                        unterschiedlichsten Leute zusammen arbeiten. Probleme entstehen häufig, wenn Menschen auf
+                        absolut
+                        anderen Wellenlängen sind. Du kommst mit der Art deines Berufsbildners oder deiner
+                        Berufsbildnerin
+                        überhaupt nicht klar?</p>
+                    <h3 class="white-text">Suche das Gespräch mit deinem Vorgesetzten</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="articles">
+        <div class="row mb-sm">
+            <h1 class="title blue ml-md">Fokusthemen Finanzen</h1>
+        </div>
+        <div class="row">
+            <div class="col-6 article-box-wrapper">
+                <div class="article-box">
+                    <img src=<%=require("./images/gallery.png")%>
+                    alt="gallery">
+                    <div class="text">
+                        <h4 class="white-text mb-1">Liegenschaftsaufwand konnte erstmals gesenkt werden</h4>
+                        <a href="#" class="link">
+                            <div class="icon">
+                                <svg>
+                                    <use href="#arrow-right"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 article-box-wrapper">
+                <div class="article-box bg-rosa">
+                    <img src=<%=require("./images/stats.png")%>
+                    alt="gallery">
+                    <div class="text">
+                        <h4 class="white-text mb-1">Die Entwicklung der SVA Zürich 1948 - 2022</h4>
+                        <a href="#" class="link">
+                            <div class="icon">
+                                <svg>
+                                    <use href="#arrow-right"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 article-box-wrapper">
+                <div class="article-box bg-darkblue">
+                    <img src=<%=require("./images/eye.png")%>
+                    alt="gallery">
+                    <div class="text">
+                        <h4 class="white-text mb-1">Zusatzleistungen wieder im grünen Bereich</h4>
+                        <a href="#" class="link">
+                            <div class="icon">
+                                <svg>
+                                    <use href="#arrow-right"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<svg width="0" height="0" class="hidden" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+    <symbol viewBox="0 0 18 12" id="arrow-right">
+        <path d="M0.671555 7.33181L0.671555 5.33181L13.4999 5.33181L10.2574 2.08931L11.6716 0.67511L17.3284 6.33191L11.6716 11.9888L10.2574 10.5746L13.5001 7.33181L0.671555 7.33181Z"/>
+    </symbol>
+</svg>
+
+<script src=<%=require("./js/example.js")%></script>
+</body>
+</html>
